@@ -17,6 +17,11 @@ function App() {
           
         </ul>
       
+      <h2>Georgia</h2>
+      <ul className="G-App_ordered_list"> 
+        <li>My favourite food is Chinese but I do love a pizza!</li>
+        <li>My hobbies include rock climbing, snowboarding and playing with my rabbits.</li>
+      </ul>
 
     </div>
   );

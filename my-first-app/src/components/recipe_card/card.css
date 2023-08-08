@@ -10,7 +10,7 @@
     background-color: #fff;
     font-family: Arial, sans-serif;
     width: 800px; /* Adjust width as needed */
-    background-image: url('/public/images/dan-cristian-padure-3bb9RUp86M0-unsplash.jpg');
+    background-image: url('/public/images/sj-objio-XFWiZTa2Ub0-unsplash.jpg');
     background-size: cover;
 }
 
@@ -26,7 +26,7 @@
 }
 
 .recipe-img {
-    max-width: 100%;
+    max-width: 200px;
     height: auto;
     margin-bottom: 10px;
 }
@@ -54,15 +54,18 @@
 
 .tab-item svg {
     margin-right: 5px;
+    font-family: 'Edu SA Beginner', cursive;
 }
 
 .tab-body {
     margin-top: 10px;
+    font-family: 'Caveat', cursive;
 }
 
 .tab-body h3 {
     font-size: 18px;
     font-weight: bold;
+    font-family: 'Edu SA Beginner', cursive;
     margin-bottom: 5px;
 }
 
@@ -73,6 +76,7 @@
     background-color: #f7f7f7;
     border-radius: 5px;
     margin-top: 10px;
+    font-family: 'Caveat', cursive;
 }
 
 .tab-notes.active {

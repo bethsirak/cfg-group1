@@ -9,7 +9,9 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     background-color: #fff;
     font-family: Arial, sans-serif;
-    width: 350px; /* Adjust width as needed */
+    width: 800px; /* Adjust width as needed */
+    background-image: url('https://images.unsplash.com/photo-1516684669134-6c2b0f4d3d7a?ixlib=rb-0');
+    background-size: cover;
 }
 
 .tabbed-recipe-card .tab-title {

@@ -1,6 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import RecipeCard from './components/recipe_card/recipe-card';
+import RecipeCardTemplate from './components/recipe_card/RecipeCardTemplate';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 

@@ -1,0 +1,55 @@
+/* Recipe Card Styles */
+.recipe-card {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.recipe-img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.ingredients-list,
+.instructions,
+.nutrition-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.ingredients-list li,
+.instructions li,
+.nutrition-list li {
+    margin-bottom: 8px;
+}
+
+.edit-button {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Additional Styling */
+h2, h3 {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Add more styles as needed */

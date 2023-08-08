@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './RecipeCardTemplate.css'; // Add your custom CSS for styling
+import './card.css'; // Import the CSS file
+ // Add your custom CSS for styling
 
 const RecipeCardTemplate = () => {
   const [hiddenNotes, setHiddenNotes] = useState(true);

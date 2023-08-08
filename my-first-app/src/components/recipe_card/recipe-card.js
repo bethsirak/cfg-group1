@@ -19,7 +19,7 @@ const RecipeCard = () => {
     <div className="tabbed-recipe-card">
       <div className="tab-title">Peach Cobbler</div>
       <img
-        src="my-first-app/src/images/peachcobbler.jpeg"
+        src="my-first-app/public/images/peachcobbler2.jpeg"
         alt="Peach Cobbler"
         className="recipe-img"
       />

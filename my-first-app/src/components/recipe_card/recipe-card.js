@@ -1,16 +1,26 @@
-document.addEventListener('DOMContentLoaded', function () {
-    // Get all recipe card elements
-    const recipeCards = document.querySelectorAll('.recipe-card');
+import React, { useState } from 'react';
 
-    // Add click event listeners to each recipe card
-    recipeCards.forEach(card => {
-        const toggleButton = card.querySelector('.toggle-button');
-        const instructions = card.querySelector('.instructions');
+const RecipeCard = () => {
+  const [hiddenInstructions, setHiddenInstructions] = useState(true);
 
-        toggleButton.addEventListener('click', function () {
-            instructions.classList.toggle('hidden');
-            // Toggle the button text
-            toggleButton.textContent = instructions.classList.contains('hidden') ? 'Show Instructions' : 'Hide Instructions';
-        });
-    });
-});
+  const toggleInstructions = () => {
+    setHiddenInstructions(prevHidden => !prevHidden);
+  };
+
+  return (
+    <div className="recipe-card">
+      <h2>Recipe Title</h2>
+      <button className="edit-button" onClick={toggleInstructions}>
+        {hiddenInstructions ? 'Show Instructions' : 'Hide Instructions'}
+      </button>
+      {hiddenInstructions ? null : (
+        <div className="instructions">
+          {/* Insert your instructions content here */}
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+        </div>
+      )}
+    </div>
+  );
+};
+
+export default RecipeCard;

@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import RecipeCard from './components/recipe_card/recipe-card'; // Use the correct relative path // Use the correct filename 'recipe-card.js'
 import './App.css';
 
 function App() {
@@ -22,6 +23,10 @@ function App() {
       <h2>Georgia</h2>
         <li>My favourite food is Chinese but I do love a pizza!</li>
         <li>My hobbies include rock climbing, snowboarding and playing with my rabbits.</li>
+
+        <h2>Sophia</h2>
+        <li>My favorite food is ...</li>
+        <li>I like to ...</li>
       </ul>
     </div>
   );

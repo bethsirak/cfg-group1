@@ -1,0 +1,16 @@
+/* Add custom styles to override Bootstrap styles */
+body {
+    font-family: 'Outfit', 'Roboto', sans-serif;
+  }
+  
+  /* Override Bootstrap button color */
+  .btn-warning {
+    background-color: #ffcc00;
+    color: #fff;
+  }
+  
+  /* Adjust text color for the right column */
+  .bg-warning {
+    color: #fff;
+  }
+  

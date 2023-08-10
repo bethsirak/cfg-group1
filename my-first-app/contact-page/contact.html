@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="path-to-your-js-file.js"></script>
+</head>
+<body>
+  <!-- Floating Navbar -->
+  <nav class="navbar navbar-light bg-light fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">RECIPES BY REGION</a>
+      <div>
+        <a class="navbar-text text-white" href="#">Home</a>
+        <a class="navbar-text text-white" href="#">About</a>
+        <a class="navbar-text text-white" href="#">Contact</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contact Form Section -->
+  <section class="container mt-5">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-md-6 text-white">
+        <h2>Contact Us</h2>
+        <p>Want to request a new feature, report a bug, or just say hi? Send a message using the form!</p>
+        <form id="newsletterForm">
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email address" required>
+          </div>
+          <button type="submit" class="btn btn-warning">Submit</button>
+        </form>
+      </div>
+      <!-- Right Column -->
+      <div class="col-md-6 bg-warning text-white">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+          <div class="form-group">
+            <label for="fullName">Full Name:</label>
+            <input type="text" class="form-control" id="fullName" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" id="message" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-warning float-right">Submit</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Include Bootstrap JS and other scripts as needed -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

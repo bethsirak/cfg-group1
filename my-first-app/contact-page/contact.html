@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Include Bootstrap CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Include custom CSS for additional styling -->
   <link rel="stylesheet" href="styles.css">
-  <script src="../contact-page/contact.js"></script>
+  <script src="contact.js"></script>
 </head>
 <body>
   <!-- Floating Navbar -->
@@ -25,6 +27,7 @@
       <div class="col-md-6 text-white">
         <h2>Contact Us</h2>
         <p>Want to request a new feature, report a bug, or just say hi? Send a message using the form!</p>
+        <p>Join our newsletter</p>
         <form id="newsletterForm">
           <div class="form-group">
             <input type="email" class="form-control" placeholder="Email address" required>
@@ -50,6 +53,7 @@
           </div>
           <button type="submit" class="btn btn-warning float-right">Submit</button>
         </form>
+        <div id="successMessage" style="display: none;">Thank you! Your message has been sent.</div>
       </div>
     </div>
   </section>

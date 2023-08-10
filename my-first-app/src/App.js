@@ -23,7 +23,7 @@ function App() {
               <Link to="/about-us">About Us</Link>
             </li>
             <li>
-              <Link to="/conctact">contact</Link>
+              <Link to="/contact">contact</Link>
             </li>
           </ul>
         </nav>
@@ -73,7 +73,7 @@ function App() {
               <li>I spend a lot of time playing video games -</li>
               <li>I love the way I use my brain when doing so, actively but also passively.</li>
             </ul>
-
+            <Route path="/contact" element={<Contact />} />         
           </div>} />
         </Routes>
       </div>

@@ -39,7 +39,7 @@ function App() {
             <h2>Beth</h2>
             <ul>
               <li>I love watching tv shows and listening to music.</li>
-              <li>When I'm not chilling in bed.. I go to boxing, something I have recently taken up.</li>
+              <li>When Im not chilling in bed.. I go to boxing, something I have recently taken up.</li>
               <li>I like boxing because it is active and requires working with others.</li>
             </ul>
 
@@ -62,6 +62,13 @@ function App() {
               <li>My favorite food is Mexican! As long as it is vegan.</li>
               <li>I like to look after my plants, go charity shopping, and go jogging or to the gym.</li>
               <li> I like looking after plants as it's interesting to learn about their different needs and they brighten up a room.</li>
+            </ul>
+
+            <h2>Grace</h2>
+            <ul>
+              <li>My favorite food is Thai, it is so flavourful and the perfect combination of taste profiles.</li>
+              <li>I spend a lot of time playing video games -</li>
+              <li>I love the way I use my brain when doing so, actively but also passively.</li>
             </ul>
 
           </div>} />

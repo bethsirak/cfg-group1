@@ -17,13 +17,14 @@ import Carribbean from './components/Continents/Caribbean';
 import CtrlAmerica from './components/Continents/CentralAmerica';
 import Title from './Title-Header';
 
+
 function App() {
   return (
     <Router>
       <div className="App">
       <div className='Title'>
             <Title/>
-        </div>
+       </div>
         <nav>
           <Link to="/">Home</Link>
           <ul className="App-nav_list">
@@ -57,7 +58,7 @@ function App() {
 
           </div>} /> */}
         </Routes>
-        </div>
+
       </div>
     </Router>
   );

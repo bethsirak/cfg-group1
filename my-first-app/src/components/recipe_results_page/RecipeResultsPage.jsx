@@ -1,10 +1,8 @@
 import React, { useState } from "react";
-import "./RecipeResultsPage.css";
+import { useDispatch, useSelector } from "react-redux";
+import { setChosenRecipe } from "../../redux/slices/chosenRecipeSlice";
 
-//fake "global variable" - will later be in store I imagine
-//idea is to store the name of the recipe chosen (or the url or whatever)
-//so that the recipe card can load the correct page
-let testGlobal = "no recipe chosen";
+import "./RecipeResultsPage.css";
 
 const RecipePreview = ({ recipe, children }) => (
   <div className="recipes">
@@ -13,13 +11,16 @@ const RecipePreview = ({ recipe, children }) => (
   </div>
 );
 
-function handleClick(recipeName) {
-  testGlobal = recipeName;
-  console.log(testGlobal); //later this will cause a change to the relevant recipe card page.
-}
+export default function RecipeResultsPage() {
+  const dispatch = useDispatch();
+  const chosenRecipe = useSelector((state) => state.chosenRecipe.value);
 
-function RecipeResultsPage() {
-  const [recipeResults] = useState([
+  function handleClick(recipeName) {
+    dispatch(setChosenRecipe(recipeName));
+    console.log("The chosen recipe after the click is: " + chosenRecipe); //for my benefit - to be deleted
+  }
+
+  const [recipeRegionalResults] = useState([
     {
       name: "Chicken and Cheese Plait",
       logo: "https://bigoven-res.cloudinary.com/image/upload/h_320,w_320,c_fill/chicken-cheese-plait-a2070cb114e5c3e0115de0aa.jpg",
@@ -63,7 +64,7 @@ function RecipeResultsPage() {
       </div>
 
       <div className="recipeResultsContainer">
-        {recipeResults.map((recipe, index) => (
+        {recipeRegionalResults.map((recipe, index) => (
           <RecipePreview key={index} recipe={recipe}>
             <img
               src={recipe.logo}
@@ -76,5 +77,3 @@ function RecipeResultsPage() {
     </div>
   );
 }
-
-export default RecipeResultsPage;

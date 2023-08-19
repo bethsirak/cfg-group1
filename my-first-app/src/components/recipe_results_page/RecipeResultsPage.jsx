@@ -14,6 +14,7 @@ const RecipePreview = ({ recipe, children }) => (
 export default function RecipeResultsPage() {
   const dispatch = useDispatch();
   const chosenRecipe = useSelector((state) => state.chosenRecipe.value);
+  const chosenRegion = useSelector((state) => state.chosenRegion.value);
 
   function handleClick(recipeName) {
     dispatch(setChosenRecipe(recipeName));
@@ -59,7 +60,7 @@ export default function RecipeResultsPage() {
     <div className="RecipeResultsPage">
       <h2>NAV BAR HERE</h2>
       <div className="banner">
-        HERE ARE EIGHT RECIPES FROM XXXX.
+        HERE ARE EIGHT RECIPES FROM {chosenRegion}.
         <br /> CLICK ON A RECIPE TO SEE FULL DETAILS
       </div>
 

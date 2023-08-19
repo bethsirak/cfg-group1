@@ -3,7 +3,7 @@ import { createSlice } from "@reduxjs/toolkit"
 export const chosenRegionSlice = createSlice({
     name: "chosenRegion",
     initialState: {
-        value:''
+        value:'XXtempXX'
     },
 
     reducers:{

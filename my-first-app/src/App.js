@@ -2,6 +2,8 @@ import React from 'react';
 import logo from './logo.svg';
 import RecipeCard from './components/recipe_card/recipe-card';
 import RecipeCardTemplate from './components/recipe_card/RecipeCardTemplate';
+import RecipeResultsPage from './components/recipe_results_page/RecipeResultsPage';
+
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 
@@ -24,6 +26,9 @@ function App() {
             </li>
           </ul>
         </nav>
+
+        {/* Temporary to see page */}
+        <RecipeResultsPage/>
 
         <Routes>
           <Route path="/recipe-card" element={<RecipeCard />} />

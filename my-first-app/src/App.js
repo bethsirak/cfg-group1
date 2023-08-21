@@ -6,78 +6,66 @@ import RecipeResultsPage from './components/recipe_results_page/RecipeResultsPag
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
+import About from './components/About';
+import Home from './components/worldMap';
+import Africa from './components/Continents/Africa';
+import Asia from './components/Continents/Asia';
+import SouthAmerica from './components/Continents/SouthAmerica';
+import NorthAmerica from './components/Continents/NorthAmerica'
+import Europe from './components/Continents/Europe';
+import Oceania from './components/Continents/Oceania&Australia';
+import MiddleEast from './components/Continents/MiddleEast';
+import Carribbean from './components/Continents/Caribbean';
+import CtrlAmerica from './components/Continents/CentralAmerica';
+import Title from './Title-Header';
+
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <header className="App-header">
-          <h1>All about us!</h1>
-          <h2>Team 1</h2>
-        </header>
-
+      <div className='Title'>
+            <Title/>
+        </div>
         <nav>
+          <Link to="/">Home</Link>
           <ul className="App-nav_list">
             <li>
-              <Link to="/recipe-card">Recipe Card</Link>
+              <Link to="/recipes">Recipe Card</Link>
             </li>
             <li>
-              <Link to="/about-us">About Us</Link>
+              <Link to="/about">About Us</Link>
             </li>
           </ul>
         </nav>
 
-        {/* Temporary to see page */}
-        <RecipeResultsPage/>
+        <div>
 
         <Routes>
+          <Route path="/" element={<Home />} ></Route>
           <Route path="/recipe-card" element={<RecipeCard />} />
+          <Route path='/about' element={<About />} />
+          <Route path='/Africa' element={<Africa />} />
+          <Route path='/Asia' element={<Asia />} />
+          <Route path='/South-America' element={<SouthAmerica />} />
+          <Route path='/North-America' element={<NorthAmerica />} />
+          <Route path='/Europe' element={<Europe />} />
+          <Route path="/Oceania-Australia" element={<Oceania />} />
+          <Route path='/Middle-East' element={<MiddleEast />} />
+          <Route path='/Caribbean' element={<Carribbean />} />
+          <Route path='/Central-America' element={<CtrlAmerica />} />
+          <Route path='/recipes' element={<RecipeCard />} />
+          {/* <Route path='/community' element={<Community />}/> */}
+          {/* <Route path='/blog' element={<Blog />} /> */}
 
-          <Route path="/about-us" element={<div className="App-ordered_list">
-            <h2>Anne</h2>
-            <ul>
-              <li>My favourite cuisine is Vietnamese but for desserts always head to Italy.</li>
-              <li>Outside the kitchen I like to run and cross-stitch.</li>
-              <li>I like running because it is a reason to go outside whils staying healthy.</li>
-            </ul>
+          {/* <Route path="/about-us" element={<div className="App-ordered_list">         
 
-            <h2>Beth</h2>
-            <ul>
-              <li>I love watching tv shows and listening to music.</li>
-              <li>When Im not chilling in bed.. I go to boxing, something I have recently taken up.</li>
-              <li>I like boxing because it is active and requires working with others.</li>
-            </ul>
-
-            <h2>Georgia</h2>
-            <ul>
-              <li>My favourite food is Chinese but I do love a pizza!</li>
-              <li>My hobbies include rock climbing, snowboarding and playing with my rabbits.</li>
-              <li>I like rock climbing because it requires problem solving skills as well as physical strength.</li>
-            </ul>
-
-            <h2>Sophia</h2>
-            <ul>
-              <li>My favorite food is toast.</li>
-              <li>I like to read books.</li>
-              <li> I like reading because it has the potential to transport you to a whole new world.</li>
-            </ul>
-
-            <h2>Sarah</h2>
-            <ul>
-              <li>My favorite food is Mexican! As long as it is vegan.</li>
-              <li>I like to look after my plants, go charity shopping, and go jogging or to the gym.</li>
-              <li> I like looking after plants as it's interesting to learn about their different needs and they brighten up a room.</li>
-            </ul>
-
-            <h2>Grace</h2>
-            <ul>
-              <li>My favorite food is Thai, it is so flavourful and the perfect combination of taste profiles.</li>
-              <li>I spend a lot of time playing video games -</li>
-              <li>I love the way I use my brain when doing so, actively but also passively.</li>
-            </ul>
-
-          </div>} />
+          </div>} /> */}
         </Routes>
+          </div>
+          <div>
+            <Home />
+          </div>
       </div>
     </Router>
   );

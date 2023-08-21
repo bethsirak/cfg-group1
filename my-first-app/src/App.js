@@ -18,6 +18,7 @@ import MiddleEast from './components/Continents/MiddleEast';
 import Carribbean from './components/Continents/Caribbean';
 import CtrlAmerica from './components/Continents/CentralAmerica';
 import Title from './Title-Header';
+import World from './components/Continents/world';
 
 
 function App() {
@@ -55,12 +56,12 @@ function App() {
           <Route path='/Caribbean' element={<Carribbean />} />
           <Route path='/Central-America' element={<CtrlAmerica />} />
           <Route path='/recipes' element={<RecipeCard />} />
+          <Route path='/World' element={<World />} />
           {/* <Route path='/community' element={<Community />}/> */}
-          {/* <Route path='/blog' element={<Blog />} /> */}
-
+           {/* <Route path='/blog' element={<Blog />} /> */}
           {/* <Route path="/about-us" element={<div className="App-ordered_list">         
 
-          </div>} /> */}
+          // </div>} /> */}
         </Routes>
           </div>
           <div>

@@ -39,9 +39,13 @@
 .Title{
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   font-style: italic;
+  color: rgb(171, 138, 234);
   font-weight: bolder;
-  border: 15px inset #E26D5C;
+  font-size: xx-large;
+  border: 15px inset #fe9989;
   align-items: center;
-  background-color: aqua;
+  margin-left: 400px;
+  margin-right: 400px;
+  background-color: rgb(157, 219, 219);
   border-radius: 15px;
 }

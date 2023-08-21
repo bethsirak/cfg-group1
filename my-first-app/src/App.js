@@ -24,7 +24,7 @@ function App() {
       <div className="App">
       <div className='Title'>
             <Title/>
-       </div>
+        </div>
         <nav>
           <Link to="/">Home</Link>
           <ul className="App-nav_list">
@@ -58,7 +58,10 @@ function App() {
 
           </div>} /> */}
         </Routes>
-
+          </div>
+          <div>
+            <Home />
+          </div>
       </div>
     </Router>
   );

@@ -1,16 +1,80 @@
-/* Add custom styles to override Bootstrap styles */
-body {
-    font-family: 'Outfit', 'Roboto', sans-serif;
-  }
-  
-  /* Override Bootstrap button color */
-  .btn-warning {
-    background-color: #ffcc00;
-    color: #fff;
-  }
-  
-  /* Adjust text color for the right column */
-  .bg-warning {
-    color: #fff;
-  }
-  
+/* Apply custom styles to the Contact Form section */
+.container {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 2rem 0;
+  background-color: #ffcc00;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.col-md-6 {
+  width: 50%;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.bg-warning {
+  background-color: #ffcc00;
+}
+
+/* Override Bootstrap button color */
+.btn-warning {
+  background-color: #ffcc00;
+  color: #fff;
+}
+
+/* Add custom styles for the form and form elements */
+.form-container {
+  width: 100%;
+  max-width: 820px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px 1px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  font-weight: bold;
+}
+
+.form-control {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-submit {
+  background-color: #ffcc00;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-submit:hover {
+  background-color: #ffa500;
+}
+
+.success-message {
+  display: none;
+  color: green;
+  font-weight: bold;
+  margin-top: 10px;
+}

@@ -4,6 +4,10 @@ import RecipeCard from './components/recipe_card/recipe-card';
 import RecipeCardTemplate from './components/recipe_card/RecipeCardTemplate';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
+import Contact from './contact-page/contact'; 
+import TestComponent from './TestComponent';
+
+
 
 function App() {
   return (
@@ -24,6 +28,9 @@ function App() {
             </li>
             <li>
               <Link to="/contact">contact</Link>
+            </li>
+            <li>
+              <Link to="/test">Test Component</Link> {/* Add this line */}
             </li>
           </ul>
         </nav>
@@ -73,7 +80,8 @@ function App() {
               <li>I spend a lot of time playing video games -</li>
               <li>I love the way I use my brain when doing so, actively but also passively.</li>
             </ul>
-            <Route path="/contact" element={<Contact />} />         
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/test" element={<TestComponent />} />         
           </div>} />
         </Routes>
       </div>

@@ -21,27 +21,44 @@
 
    <div class="container">
     <div class="form">
-      <div class="contact-info"></div>
-
-      <div class="contact-form"></div>
-      <form action="index.html">
+      <div class="contact-info">
         <h3 class="title">Contact Us</h3>
-        <div class="input-container">
-          <input type="text" name="name" class="input">
-          <label for="">FULL NAME :</label>
-        </div>
-        <div class="input-container">
-          <input type="email" name="email" class="input">
-          <label for="">EMAIL :</label>
-        </div>
-        <div class="input-container text area">
-          <textarea name="message" class="input"></textarea>
-          <label for="">MESSAGE :</label>
-        </div>
-        <input type="submit" value="Send" class="btn">
-      </form>
+        <p class="text">
+          Want to request a new feature, report a bug, or just say hi? Send a message using the form!
+        </p>
+      
+
+      <div class="newsletter">
+        <h3 class="title">join our mewsletter</h3>
+        <form id="newsletterForm" class="newsletter-form">
+          <div class="input-container">
+            <label for="newsletterEmail">Email Address:</label>
+            <input type="email" name="newsletterEmail" id="newsletterEmail" class="input" placeholder="Enter your email address">
+          </div>
+          <button type="submit" class="btn btn-newsletter">join</button>
+        </form>
+      </div> 
+    </div> 
+
+      <div class="contact-form">
+        <form action="index.html"> 
+            <div class="input-container">
+            <input type="text" name="name" class="input">
+            <label for="name">FULL NAME :</label>
+          </div>
+          <div class="input-container">
+            <label for="email">EMAIL :</label>
+            <input type="email" name="email" id="email" class="input">
+          </div>
+          <div class="input-container text-area">
+            <label for="message">MESSAGE :</label>
+            <textarea name="message" id="message" class="input"></textarea>
+          </div>
+            <input type="submit" value="Send" class="btn">
+        </form>
+      </div>
     </div>
-   </div>
+  </div>
 
 
 

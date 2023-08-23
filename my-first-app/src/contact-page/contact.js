@@ -1,7 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './contact.css';
 
 function Contact() {
+  const [successMessageVisible, setSuccessMessageVisible] = useState(false);
+
   function handleContactFormSubmit(event) {
     event.preventDefault();
 
@@ -17,7 +19,7 @@ function Contact() {
 
     // If the form is valid, you can send the form data using AJAX
     // Display the success message
-    document.getElementById("successMessage").style.display = "block";
+    setSuccessMessageVisible(true);
   }
 
   function handleNewsletterFormSubmit(event) {
@@ -38,20 +40,20 @@ function Contact() {
         <div className="row">
           {/* Left Column */}
           <div className="col-md-6 text-white">
-            <h2>Contact Us</h2>
+            {/* Commented out the text content */}
+            {/* <h2>Contact Us</h2>
             <p>Want to request a new feature, report a bug, or just say hi? Send a message using the form!</p>
-            <p>Join our newsletter</p>
+            <p>Join our newsletter</p> */}
             <form id="newsletterForm" onSubmit={handleNewsletterFormSubmit}>
               {/* Newsletter form elements */}
             </form>
           </div>
           {/* Right Column */}
           <div className="col-md-6 bg-warning text-white">
-            <h2>Contact Us</h2>
             <form id="contactForm" onSubmit={handleContactFormSubmit}>
               {/* Contact form elements */}
             </form>
-            <div id="successMessage" style={{ display: 'none' }}>Thank you! Your message has been sent.</div>
+            {successMessageVisible && <div id="successMessage">Thank you! Your message has been sent.</div>}
           </div>
         </div>
       </section>

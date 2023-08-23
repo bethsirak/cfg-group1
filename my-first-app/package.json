@@ -21,6 +21,9 @@
     "react-redux": "^8.1.2",
     "react-router-dom": "^6.14.2",
     "react-scripts": "^5.0.1",
+    "react-simple-maps": "^3.0.0",
+    "react-svg": "^16.1.22",
+    "react-tooltip": "^5.21.1",
     "web-vitals": "^3.4.0"
   },
   "browserslist": {

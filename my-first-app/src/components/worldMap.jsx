@@ -32,7 +32,7 @@ export default function Home(){
             <p class="subheader">Select a Continent/Area on the map below to start exploring some Recipes from around the World!</p>
         </header>
         <div>
-            <div dangerouslySetInnerHTML={{perf: htmlFileString}} />
+            
         </div>
     </div>
     )}

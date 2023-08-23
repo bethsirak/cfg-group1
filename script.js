@@ -1,11 +1,11 @@
 function rotateFunction(){
-    var min = 1024;
-    var max = 9999;
-    var degr = Math.floor(Math.random() * (max - min)) + min;
+    let min = 1024;
+    let max = 9999;
+    let degr = Math.floor(Math.random() * (max - min)) + min;
     document.getElementById('box').style.transform = "rotate("+degr+"deg)";
 }
 
-var element = document.getElementById('mainbox');
+let element = document.getElementById('mainbox');
   element.classList.remove('animate');
 
 setTimeout(function(){

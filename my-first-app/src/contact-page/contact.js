@@ -8,9 +8,9 @@ function Contact() {
     event.preventDefault();
 
     // Validate the form fields (e.g., check if fields are filled)
-    var fullName = document.getElementById("fullName").value;
-    var email = document.getElementById("email").value;
-    var message = document.getElementById("message").value;
+    var fullName = document.querySelector('.input[name="name"]').value;
+    var email = document.querySelector('.input[name="email"]').value;
+    var message = document.querySelector('.input[name="message"]').value;
 
     if (!fullName || !email || !message) {
       alert("Please fill in all fields");
@@ -31,34 +31,30 @@ function Contact() {
   }
 
   return (
-    <div>
-      <nav className="navbar navbar-light bg-light fixed-top">
-        {/* Navbar content */}
-      </nav>
+    <div className="container">
+      <div className="form">
+        <div className="contact-info"></div>
 
-      <section className="container mt-5">
-        <div className="row">
-          {/* Left Column */}
-          <div className="col-md-6 text-white">
-            {/* Commented out the text content */}
-            {/* <h2>Contact Us</h2>
-            <p>Want to request a new feature, report a bug, or just say hi? Send a message using the form!</p>
-            <p>Join our newsletter</p> */}
-            <form id="newsletterForm" onSubmit={handleNewsletterFormSubmit}>
-              {/* Newsletter form elements */}
-            </form>
-          </div>
-          {/* Right Column */}
-          <div className="col-md-6 bg-warning text-white">
-            <form id="contactForm" onSubmit={handleContactFormSubmit}>
-              {/* Contact form elements */}
-            </form>
-            {successMessageVisible && <div id="successMessage">Thank you! Your message has been sent.</div>}
-          </div>
+        <div className="contact-form">
+          <form onSubmit={handleContactFormSubmit}>
+            <h3 className="title">Contact Us</h3>
+            <div className="input-container">
+              <label htmlFor="name">FULL NAME :</label>
+              <input type="text" name="name" className="input" />
+            </div>
+            <div className="input-container">
+              <label htmlFor="email">EMAIL :</label>
+              <input type="email" name="email" className="input" />
+            </div>
+            <div className="input-container text-area">
+              <label htmlFor="message">MESSAGE :</label>
+              <textarea name="message" className="input"></textarea>
+            </div>
+            <button type="submit" className="btn btn-warning">Send</button>
+          </form>
+          {successMessageVisible && <div id="successMessage">Thank you! Your message has been sent.</div>}
         </div>
-      </section>
-
-      {/* Include Bootstrap JS and other scripts as needed */}
+      </div>
     </div>
   );
 }

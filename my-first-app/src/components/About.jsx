@@ -2,10 +2,19 @@ import React from "react";
 
 export default function About(){
     return(
+        <div>
+        <h1>About This site</h1>
+        <h2>Our Purpose</h2>
+        <p>
+            The world is full of wonderful things! None more so than the wide array of cuisines across the globe.
+            <br />
+            As a result we have created this site to give you the opportunity to experience different cuisines from all over the world. You will be cooking up a storm, 
+            with wholesome dishes from different countries, regions and continents.
+        </p>
     <div>
         <header className="App-header">
             <h1>All about us!</h1>
-            <h2>Team 1</h2>
+            <h2>Meet the Team!</h2>
         </header>
         <h2>Anne</h2>
         <ul>
@@ -48,5 +57,6 @@ export default function About(){
             <li>I spend a lot of time playing video games -</li>
             <li>I love the way I use my brain when doing so, actively but also passively.</li>
         </ul>
+    </div>
     </div>
 )}

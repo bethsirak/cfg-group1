@@ -3,17 +3,20 @@ import React from "react";
 export default function About(){
     return(
         <div>
-        <h1>About This site</h1>
+        <h1>About Us!</h1>
         <h2>Our Purpose</h2>
         <p>
-            The world is full of wonderful things! None more so than the wide array of cuisines across the globe.
+            The world is full of wonderful things! None more so than the wide array of cuisines from across the globe.
             <br />
-            As a result we have created this site to give you the opportunity to experience different cuisines from all over the world. You will be cooking up a storm, 
-            with wholesome dishes from different countries, regions and continents.
+            As a result we have created this site to give you the opportunity to experience different cuisines and dishes from all over the world. You will be cooking up a storm, 
+            with wholesome dishes from different countries, regions and continents. Master the menu's on offer and experience one of life's greatest treasures ... good food!!
+            <br />
+            If you enjoy the site and have any questions you's like to ask, you can contact us in the 'Contact' section.
+            <br />
+            We look forward to spreading our Global Delights with you!  
         </p>
     <div>
         <header className="App-header">
-            <h1>All about us!</h1>
             <h2>Meet the Team!</h2>
         </header>
         <h2>Anne</h2>

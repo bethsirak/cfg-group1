@@ -3,7 +3,7 @@ import React from "react";
 export default function Title() {
     return (
         <div>
-            <svg height="130" width="500">
+            <svg height="130" width="800">
                 <defs>
                     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
                         <stop offset="0%" style={{ stopColor: "rgb(255,255,0)", stopOpacity: 1 }} />

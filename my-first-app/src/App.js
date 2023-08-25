@@ -4,6 +4,7 @@ import RecipeCard from './components/recipe_card/recipe-card';
 import RecipeCardTemplate from './components/recipe_card/RecipeCardTemplate';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
+import RecipeResultsPage from './components/recipe_results_page/RecipeResultsPage';
 
 function App() {
   return (

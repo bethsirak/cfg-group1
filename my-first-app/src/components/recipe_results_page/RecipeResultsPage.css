@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: local(my-first-app\src\Fonts\Roboto-Regular);
+  }
+  
+  * {
+    box-sizing: border-box;
+    background-color: #472d30;
+  }
+  .body {
+    font-family: "Roboto", sans-serif;
+  }
+  
+  .banner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #e26d5c;
+    color: #ffe1a8;
+    font-size: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  
+  .recipeResultsPage-header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    font-style: italic;
+    color: #ffe1a8;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  
+  .recipeResultsPage-h2 {
+    font-family: "Roboto", sans-serif;
+    font-size: 70px;
+    font-style: italic;
+    color: #ffe1a8;
+  }
+  
+  .recipeResultsContainer {
+    border: 50px solid #472d30;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 5px;
+    column-gap: 150px;
+    color: #ffe1a8;
+    font-size: 20px;
+    margin-left: 1%;
+    margin-right: 1%;
+  }
+  
+  .recipes {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0 0 1em 0;
+    padding: 1em;
+    
+  }
+  
+  .recipeResultsContainer img {
+    margin: 0.5em 0;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: 25% 25%;
+    border: 5px solid #ffe1a8;
+  }

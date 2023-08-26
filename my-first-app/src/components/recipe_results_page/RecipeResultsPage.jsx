@@ -116,7 +116,7 @@ export default function RecipeResultsPage() {
       <h2>NAV BAR HERE</h2>
       <div className="banner">
         HERE ARE EIGHT RECIPES FROM {chosenRegion}.
-        <br /> CLICK ON A RECIPE TO SEE FULL DETAILS
+        <br /> CLICK ON A RECIPE TO SEE FULL DETAILS - TEST
       </div>
 
       <div className="app__content">

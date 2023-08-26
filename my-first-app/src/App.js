@@ -21,6 +21,7 @@ import Title from './Title-Header';
 import World from './components/Continents/world';
 
 
+
 function App() {
   return (
     <Router>
@@ -37,6 +38,8 @@ function App() {
             <li>
               <Link to="/about">About Us</Link>
             </li>
+            <Link to="/recipe_results_page">Recipe Results</Link>
+
           </ul>
         </nav>
 
@@ -45,6 +48,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} ></Route>
           <Route path="/recipe-card" element={<RecipeCard />} />
+          <Route path="/recipe_results_page" element={<RecipeResultsPage />} />
           <Route path='/about' element={<About />} />
           <Route path='/Africa' element={<Africa />} />
           <Route path='/Asia' element={<Asia />} />

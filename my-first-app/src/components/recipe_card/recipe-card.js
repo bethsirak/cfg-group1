@@ -1,34 +1,42 @@
 import React from 'react';
-import { useParams } from 'react-router-dom';
+import { Link } from 'react-router-dom';
+import './card.css';
 
-const RecipeCard = ({ recipes }) => {
-  const { label } = useParams(); // Get the recipe label from the URL parameter
-  const recipe = recipes.find((r) => r.label === label); // Find the corresponding recipe
+const RecipeCard = ({ chosenRecipe }) => {
+  console.log('chosenRecipe prop:', chosenRecipe);
 
-  if (!recipe) {
+  if (!chosenRecipe) {
     return <div>Recipe not found</div>;
   }
 
   return (
     <div className="tabbed-recipe-card">
-      {/* Display the recipe details */}
-      <h2>{recipe.label}</h2>
-      <img src={recipe.image} alt={recipe.label} />
+      <h2>{chosenRecipe.label}</h2>
+      <img src={chosenRecipe.image} alt={chosenRecipe.label} />
 
       <div className="tab-content">
-        {/* Render recipe details, e.g., ingredients, instructions */}
         <h3>Ingredients:</h3>
         <ul className="ingredients-list">
-          {recipe.ingredientLines.map((ingredient, i) => (
+          {chosenRecipe.ingredientLines.map((ingredient, i) => (
             <li key={i}>{ingredient}</li>
           ))}
         </ul>
 
-        {/* Render other recipe details */}
-        {/* ... */}
+        <p>
+          <strong>Source:</strong> {chosenRecipe.source}
+        </p>
+        <p>
+          <strong>URL:</strong> <a href={chosenRecipe.url}>{chosenRecipe.url}</a>
+        </p>
       </div>
+
+      <Link to="/recipes">Back to Recipe Results</Link>
     </div>
   );
 };
-     
+
 export default RecipeCard;
+
+
+
+

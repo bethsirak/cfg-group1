@@ -1,49 +1,50 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { setChosenRecipe } from "../../redux/slices/chosenRecipeSlice";
-import { Link, useNavigate } from 'react-router-dom';
-import axios from "axios";
+import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
+import axios from 'axios';
+import RecipeCard from '../recipe_card/recipe-card';
 
-import "./RecipeResultsPage.css";
-
+import './RecipeResultsPage.css';
 
 export default function RecipeResultsPage() {
-  const dispatch = useDispatch();
-  const chosenRecipe = useSelector((state) => state.chosenRecipe.value);
-  const chosenRegion = useSelector((state) => state.chosenRegion.value);
   const [recipes, setRecipes] = useState([]);
-  const [query, setQuery] = useState("");
+  const [query, setQuery] = useState('');
   const navigate = useNavigate();
+  const [chosenRecipe, setChosenRecipe] = useState(null);
 
   const getRecipes = async () => {
-    const YOUR_APP_ID = "85ba0210";
-    const YOUR_APP_KEY = "cae578f5373f208164226644fd95689b";
+    const YOUR_APP_ID = '85ba0210';
+    const YOUR_APP_KEY = 'cae578f5373f208164226644fd95689b';
     const url = `https://api.edamam.com/search?q=${query}&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}`;
 
     try {
       const response = await axios.get(url);
       setRecipes(response.data.hits);
     } catch (error) {
-      console.error("Error fetching recipes:", error);
+      console.error('Error fetching recipes:', error);
     }
   };
 
-  // function handleClick(recipeName) {
-  //   dispatch(setChosenRecipe(recipeName));
-  //   console.log("The chosen recipe after the click is: " + chosenRecipe);
-  // }
 
   const handleClick = (recipe) => {
-    dispatch(setChosenRecipe(recipe.label)); // You can set the recipe label as the chosen recipe
-    console.log("The chosen recipe after the click is: " + recipe.label);
-    navigate(`/recipe/${recipe.label}`);
+    setChosenRecipe(recipe.recipe);
+    console.log('The chosen recipe after the click is: ' + recipe.recipe.label);
+    const encodedLabel = encodeURIComponent(recipe.recipe.label);
+    navigate(`/recipe/${encodedLabel}`);
   };
+
+  // const handleClick = (recipe) => {
+  //   setChosenRecipe(recipe.recipe);
+  //   console.log('The chosen recipe after the click is:', recipe.recipe);
+  //   const encodedLabel = encodeURIComponent(recipe.recipe.label);
+  //   navigate(`/recipe/${encodedLabel}`);
+  // };
+  
+  
 
   return (
     <div className="RecipeResultsPage">
-      <h2>NAV BAR HERE</h2>
       <div className="banner">
-        HERE ARE EIGHT RECIPES FROM {chosenRegion}.
+        HERE ARE EIGHT RECIPES.
         <br /> CLICK ON A RECIPE TO SEE FULL DETAILS
       </div>
 
@@ -60,21 +61,24 @@ export default function RecipeResultsPage() {
         </form>
       </div>
 
-     
       <div className="recipeResultsContainer">
-      {recipes.map((recipe) => (
-        <div key={recipe.recipe.uri} className="recipes">
-          <Link to={`/recipe/${recipe.recipe.label}`} className="recipe-link">
-            <img
-              src={recipe.recipe.image}
-              alt={recipe.recipe.label}
-              onClick={() => handleClick(recipe.recipe)}
-            />
-          </Link>
-          {recipe.recipe.label.toUpperCase()}   
-        </div>
-      ))}
+        {recipes.map((recipe) => (
+          <div key={recipe.recipe.uri} className="recipes">
+            <div className="recipe-link">
+              <img
+                src={recipe.recipe.image}
+                alt={recipe.recipe.label}
+                onClick={() => handleClick(recipe)}
+              />
+            </div>
+            {recipe.recipe.label.toUpperCase()}
+          </div>
+        ))}
       </div>
+      <RecipeCard chosenRecipe={chosenRecipe} />
+
+
+    
     </div>
   );
 }

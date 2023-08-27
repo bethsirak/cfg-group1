@@ -18,7 +18,7 @@ import MiddleEast from './components/Continents/MiddleEast';
 import Carribbean from './components/Continents/Caribbean';
 import CtrlAmerica from './components/Continents/CentralAmerica';
 import Title from './Title-Header';
-import World from './components/Continents/world';
+import World from './components/Continents/world';     
 
 
 

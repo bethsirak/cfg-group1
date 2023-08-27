@@ -1,4 +1,21 @@
 /* card.css */
+.recipe-details{
+  display: flex;
+  color: white;
+  flex-direction: column;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  font-family: Arial, sans-serif;
+  width: 800px; /* Adjust width as needed */
+  background-image: url('/public/images/sj-objio-XFWiZTa2Ub0-unsplash.jpg');
+  background-size: cover;
+
+  
+}
 .recipe-details {
     font-family: Arial, sans-serif;
     max-width: 800px; /* Set maximum width for centering */

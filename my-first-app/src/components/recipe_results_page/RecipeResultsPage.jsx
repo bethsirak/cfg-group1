@@ -4,6 +4,7 @@ import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
 import RecipeCard from './recipe-card';
 import RecipeDetailsPage from './RecipeDetailsPage';
+import Navbar from '../Navbar/Navbar';
 
 import './RecipeResultsPage.css';
 

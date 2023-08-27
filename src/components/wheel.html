@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Region Selector</title>
+    <link href="wheel.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body> 
+  <div id="mainbox" class="mainbox">
+    <div id="box" class="box">
+      <div class="box1">
+        <span class="span1" data-value="Europe"><b>Europe</b></span>
+        <span class="span2" data-value="North America"><b>North America</b></span>
+        <span class="span3" data-value="South America"><b>South America</b></span>
+        <span class="span4" data-value="Central America"><b>Cent. America</b></span>
+      </div>
+      <div class="box2">
+        <span class="span1" data-value="Middle East"><b>Middle East</b></span>
+        <span class="span2" data-value="Asia"><b>Asia</b></span>
+        <span class="span3" data-value="Oceania"><b>Oceania</b></span>
+        <span class="span4" data-value="Caribbean"><b>Caribbean</b></span>
+      </div>
+    </div> 
+    <button id="btn" class="spin" onclick="rotateFunction()">SPIN</button>
+  </div>
+  <div id="popup" class="popup">
+    <h2 id="popup-heading">Selected Segment</h2>
+    <br>
+    <p id="popup-text">This is the segment you've selected.</p>
+    <br>
+    <a id="popup-link" href="#">Enjoy!</a>
+  </div>
+  <script src="wheel.js"></script>
+  </body>
+</html>

@@ -45,21 +45,21 @@ const Wheel = () => {
         popupText.textContent = "Visit the " + winningValue + " page by clicking below.";
 
         if (winningValue === "Europe") {
-          popupLink.href = "https://example.com/europe";
+          popupLink.href = "my-first-app/src/components/Continents/Europe.jsx";
         } else if (winningValue === "North America") {
-          popupLink.href = "https://example.com/north-america";
+          popupLink.href = "my-first-app/src/components/Continents/NorthAmerica.jsx";
         } else if (winningValue === "South America") {
-          popupLink.href = "https://example.com/south-america";
+          popupLink.href = "my-first-app/src/components/Continents/SouthAmerica.jsx";
         } else if (winningValue === "Central America") {
-          popupLink.href = "https://example.com/central-america";
+          popupLink.href = "my-first-app/src/components/Continents/CentralAmerica.jsx";
         } else if (winningValue === "Middle East") {
-          popupLink.href = "https://example.com/middle-east";
+          popupLink.href = "my-first-app/src/components/Continents/MiddleEast.jsx";
         } else if (winningValue === "Asia") {
-          popupLink.href = "https://example.com/asia";
+          popupLink.href = "my-first-app/src/components/Continents/Asia.jsx";
         } else if (winningValue === "Oceania") {
-          popupLink.href = "https://example.com/oceania";
+          popupLink.href = "my-first-app/src/components/Continents/Oceania&Australia.jsx";
         } else if (winningValue === "Caribbean") {
-          popupLink.href = "https://example.com/caribbean";
+          popupLink.href = "my-first-app/src/components/Continents/Caribbean.jsx";
           }
 
         popup.style.display = "block";

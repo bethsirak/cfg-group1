@@ -115,7 +115,7 @@ const RecipeDetailsPage = () => {
   };
 
   const handleNotesChange = event => {
-    setNotes(event.target.value);
+    setNotes(event.target.value);      
   };
 
   return (

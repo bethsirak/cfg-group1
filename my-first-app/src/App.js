@@ -5,9 +5,10 @@ import RecipeResultsPage from './components/recipe_results_page/RecipeResultsPag
 import RecipeDetailsPage from './components/recipe_results_page/RecipeDetailsPage';
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import './App.css';
+import './App.css';   
 import About from './components/About';
 import Home from './components/WorldMap';
+import Wheel from './components/Wheel/wheel';
 import Africa from './components/Continents/Africa';
 import Asia from './components/Continents/Asia';
 import SouthAmerica from './components/Continents/SouthAmerica';
@@ -19,6 +20,9 @@ import Carribbean from './components/Continents/Caribbean';
 import CtrlAmerica from './components/Continents/CentralAmerica';
 import Title from './Title-Header';
 import World from './components/Continents/world';     
+import Navbar from './components/Navbar/Navbar';     
+
+
 
 
 
@@ -28,7 +32,8 @@ function App() {
         <div className='Title'>
           <Title/>
         </div>
-        <nav>
+        <Navbar/>
+        {/* <nav>
           <Link to="/">Home</Link>
           <ul className="App-nav_list">
             <li>
@@ -36,13 +41,14 @@ function App() {
             </li>
             <Link to="/recipe_results_page">Search Recipes</Link>
           </ul>
-        </nav>
+        </nav> */}
 
         <div>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/recipe_results_page" element={<RecipeResultsPage />} />
             <Route path="/recipe/:recipeUriSliced" element={<RecipeDetailsPage />} />
+            <Route path="/Wheel" element={<Wheel/>} />
 
 
           <Route path="/recipe/:label" element={<RecipeCard />} />

@@ -1,16 +1,14 @@
 import React from 'react';
-
-import MainBox from './components/mainbox';
-import Popup from './components/popup';
-import './components/wheel.css';
+import AboutUs from './components/AboutUs';
 
 function App() {
   return (
     <div className="App">
-      <MainBox />
-      <Popup />
+      {/* Your navigation bar */}
+      <AboutUs />
     </div>
   );
 }
 
 export default App;
+

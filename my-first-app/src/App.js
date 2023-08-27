@@ -35,7 +35,7 @@ function App() {
             <li>
               <Link to="/about">About Us</Link>
             </li>
-            <Link to="/recipe_results_page">Recipe Results</Link>
+            <Link to="/recipe_results_page">Search Recipes</Link>
           </ul>
         </nav>
 

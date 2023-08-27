@@ -43,8 +43,8 @@ export default function RecipeResultsPage() {
   return (
     <div className="RecipeResultsPage">
       <div className="banner">
-        HERE ARE EIGHT RECIPES.
-        <br /> CLICK ON A RECIPE TO SEE FULL DETAILS
+        START EXPLORING NOW
+        <br /> Don't wait any longer. Start your culinary exploration today. Type in your desired dish, click on a recipe, and let your culinary journey begin. Happy cooking!
       </div>
 
       <div className="app__content">

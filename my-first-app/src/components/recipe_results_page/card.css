@@ -1,89 +1,81 @@
-/* Recipe Card Styles */
-.tabbed-recipe-card {
-    display: flex;
-    flex-direction: column;
-    border: 1px solid #ccc;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
+/* card.css */
+.recipe-details {
     font-family: Arial, sans-serif;
-    width: 800px; /* Adjust width as needed */
-    background-image: url('/public/images/sj-objio-XFWiZTa2Ub0-unsplash.jpg');
-    background-size: cover;
-}
-
-.tabbed-recipe-card .tab-title {
+    max-width: 800px; /* Set maximum width for centering */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 18px;
+    font-size: 24px; /* Increase font size for emphasis */
     font-weight: bold;
     margin-bottom: 10px;
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
-}
-
-.recipe-img {
-    max-width: 200px;
+  }
+  
+  .recipe-img {
+    max-width: 100%; /* Ensure the image scales properly */
     height: auto;
     margin-bottom: 10px;
-}
-
-.tab-content {
-    display: flex;
-    flex-direction: column;
+  }
+  
+  .tab-content {
     margin-bottom: 10px;
     padding: 10px 0;
     border-bottom: 1px solid #ccc;
-}
-
-.tab-header {
+  }
+  
+  .tab-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
-}
-
-.tab-item {
-    font-size: 14px;
+  }
+  
+  .tab-item {
+    font-size: 16px; /* Slightly larger font size */
     display: flex;
     align-items: center;
-}
-
-.tab-item svg {
+  }
+  
+  .tab-item svg {
     margin-right: 5px;
     font-family: 'Edu SA Beginner', cursive;
-}
-
-.tab-body {
-    margin-top: 10px;
+  }
+  
+  .tab-body {
     font-family: 'Caveat', cursive;
-}
-
-.tab-body h3 {
-    font-size: 18px;
+  }
+  
+  .tab-body h3 {
+    font-size: 20px; /* Slightly larger font size */
     font-weight: bold;
     font-family: 'Edu SA Beginner', cursive;
     margin-bottom: 5px;
-}
-
-.tab-notes {
+  }
+  
+  .tab-notes {
     display: none;
-    font-size: 14px;
+    font-size: 16px; /* Slightly larger font size */
     padding: 10px;
     background-color: #f7f7f7;
     border-radius: 5px;
     margin-top: 10px;
     font-family: 'Caveat', cursive;
-}
-
-.tab-notes.active {
+  }
+  
+  .tab-notes.active {
     display: block;
-}
-
-.add-notes-button {
+  }
+  
+  .add-notes-button {
     background-color: #f39c12;
     color: #fff;
     border: none;
@@ -93,19 +85,13 @@
     font-size: 16px;
     align-self: center;
     margin-top: 10px;
-}
-
-/* Additional Styling */
-h2, h3 {
+  }
+  
+  /* Additional Styling */
+  h2,
+  h3 {
     margin-top: 0;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-h3 {
-    font-size: 20px;
-}
-
-/* Add more styles as needed */
+  }
+  
+  /* Add more styles as needed */
+  

@@ -66,7 +66,6 @@ function App() {
         </Routes>
           </div>
           <div>
-            <Home />
           </div>
       </div>
   );

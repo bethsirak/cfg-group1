@@ -24,7 +24,6 @@ import World from './components/Continents/world';
 
 function App() {
   return (
-    <Router>
       <div className="App">
         <div className='Title'>
           <Title/>
@@ -70,7 +69,6 @@ function App() {
             <Home />
           </div>
       </div>
-    </Router>
   );
 }
 

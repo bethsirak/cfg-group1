@@ -1,0 +1,97 @@
+/* card.css */
+.recipe-details {
+    font-family: Arial, sans-serif;
+    max-width: 800px; /* Set maximum width for centering */
+    margin: 0 auto; /* Center horizontally */
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tab-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px; /* Increase font size for emphasis */
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .recipe-img {
+    max-width: 100%; /* Ensure the image scales properly */
+    height: auto;
+    margin-bottom: 10px;
+  }
+  
+  .tab-content {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .tab-item {
+    font-size: 16px; /* Slightly larger font size */
+    display: flex;
+    align-items: center;
+  }
+  
+  .tab-item svg {
+    margin-right: 5px;
+    font-family: 'Edu SA Beginner', cursive;
+  }
+  
+  .tab-body {
+    font-family: 'Caveat', cursive;
+  }
+  
+  .tab-body h3 {
+    font-size: 20px; /* Slightly larger font size */
+    font-weight: bold;
+    font-family: 'Edu SA Beginner', cursive;
+    margin-bottom: 5px;
+  }
+  
+  .tab-notes {
+    display: none;
+    font-size: 16px; /* Slightly larger font size */
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Caveat', cursive;
+  }
+  
+  .tab-notes.active {
+    display: block;
+  }
+  
+  .add-notes-button {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+    margin-top: 10px;
+  }
+  
+  /* Additional Styling */
+  h2,
+  h3 {
+    margin-top: 0;
+  }
+  
+  /* Add more styles as needed */
+  

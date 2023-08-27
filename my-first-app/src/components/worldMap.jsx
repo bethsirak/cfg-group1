@@ -258,7 +258,6 @@ import "./World_Map.css"
     const Home = () => {
         return (
             <div>
-                <BrowserRouter>
                 <h1>Search the map to see the different countries of the world.
                     <br />
                     Click on the map to search for some global Recipes!
@@ -332,7 +331,6 @@ import "./World_Map.css"
         <Link to={"/Oceania"}>
         <button id="oc">Oceania</button>
         </Link>
-        </BrowserRouter>
     </div>
     );
 }

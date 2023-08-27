@@ -5,7 +5,7 @@ import './card.css';
 const RecipeCard = ({ chosenRecipe }) => {
 
   if (!chosenRecipe) {
-    return <div>Recipe not found</div>;
+    return <div></div>;
   }
 
   return (

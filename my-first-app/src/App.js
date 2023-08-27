@@ -7,7 +7,7 @@ import RecipeDetailsPage from './components/recipe_results_page/RecipeDetailsPag
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
 import About from './components/About';
-import Home from './components/worldMap';
+import Home from './components/WorldMap';
 import Africa from './components/Continents/Africa';
 import Asia from './components/Continents/Asia';
 import SouthAmerica from './components/Continents/SouthAmerica';

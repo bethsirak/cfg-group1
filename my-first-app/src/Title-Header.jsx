@@ -12,7 +12,7 @@ export default function Title() {
                 </defs>
                 <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)" />
                 <text fill="#ffffff" fontSize="45" fontFamily="Verdana" x="50" y="86">
-                    The World's Delights
+                    Global Delights
                 </text>
             </svg>
             

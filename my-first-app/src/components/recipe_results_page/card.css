@@ -1,0 +1,111 @@
+/* Recipe Card Styles */
+.tabbed-recipe-card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    width: 800px; /* Adjust width as needed */
+    background-image: url('/public/images/sj-objio-XFWiZTa2Ub0-unsplash.jpg');
+    background-size: cover;
+}
+
+.tabbed-recipe-card .tab-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.recipe-img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.tab-content {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.tab-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.tab-item {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+
+.tab-item svg {
+    margin-right: 5px;
+    font-family: 'Edu SA Beginner', cursive;
+}
+
+.tab-body {
+    margin-top: 10px;
+    font-family: 'Caveat', cursive;
+}
+
+.tab-body h3 {
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Edu SA Beginner', cursive;
+    margin-bottom: 5px;
+}
+
+.tab-notes {
+    display: none;
+    font-size: 14px;
+    padding: 10px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-family: 'Caveat', cursive;
+}
+
+.tab-notes.active {
+    display: block;
+}
+
+.add-notes-button {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    align-self: center;
+    margin-top: 10px;
+}
+
+/* Additional Styling */
+h2, h3 {
+    margin-top: 0;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+/* Add more styles as needed */

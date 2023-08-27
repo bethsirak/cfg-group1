@@ -1,7 +1,9 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import axios from 'axios';
-import RecipeCard from '../recipe_card/recipe-card';
+import RecipeCard from './recipe-card';
+import RecipeDetailsPage from './RecipeDetailsPage';
 
 import './RecipeResultsPage.css';
 
@@ -26,19 +28,16 @@ export default function RecipeResultsPage() {
 
 
   const handleClick = (recipe) => {
-    setChosenRecipe(recipe.recipe);
-    console.log('The chosen recipe after the click is: ' + recipe.recipe.label);
-    const encodedLabel = encodeURIComponent(recipe.recipe.label);
-    navigate(`/recipe/${encodedLabel}`);
+    const recipeUri = recipe.recipe.uri;
+    const recipeUriSliced = recipeUri.split('_')[1];
+    console.log('Clicked recipe:', recipe);
+    console.log('Clicked recipe URI:', recipeUri);
+    console.log('Clicked sliced URI:', recipeUriSliced);
+    
+    navigate(`/recipe/${recipeUriSliced}`);
   };
-
-  // const handleClick = (recipe) => {
-  //   setChosenRecipe(recipe.recipe);
-  //   console.log('The chosen recipe after the click is:', recipe.recipe);
-  //   const encodedLabel = encodeURIComponent(recipe.recipe.label);
-  //   navigate(`/recipe/${encodedLabel}`);
-  // };
   
+
   
 
   return (

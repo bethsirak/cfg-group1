@@ -1,8 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import RecipeCard from './components/recipe_card/recipe-card';
-import RecipeCardTemplate from './components/recipe_card/RecipeCardTemplate';
+import RecipeCard from './components/recipe_results_page/recipe-card';
 import RecipeResultsPage from './components/recipe_results_page/RecipeResultsPage';
+import RecipeDetailsPage from './components/recipe_results_page/RecipeDetailsPage';
 
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import './App.css';
@@ -26,29 +26,27 @@ function App() {
   return (
     <Router>
       <div className="App">
-      <div className='Title'>
-            <Title/>
+        <div className='Title'>
+          <Title/>
         </div>
         <nav>
           <Link to="/">Home</Link>
           <ul className="App-nav_list">
             <li>
-              <Link to="/recipes">Recipe Card</Link>
-            </li>
-            <li>
               <Link to="/about">About Us</Link>
             </li>
             <Link to="/recipe_results_page">Recipe Results</Link>
-
           </ul>
         </nav>
 
         <div>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/recipe_results_page" element={<RecipeResultsPage />} />
+            <Route path="/recipe/:recipeUriSliced" element={<RecipeDetailsPage />} />
 
-        <Routes>
-          <Route path="/" element={<Home />} ></Route>
-          <Route path="/recipe-card" element={<RecipeCard />} />
-          <Route path="/recipe_results_page" element={<RecipeResultsPage />} />
+
+          <Route path="/recipe/:label" element={<RecipeCard />} />
           <Route path='/about' element={<About />} />
           <Route path='/Africa' element={<Africa />} />
           <Route path='/Asia' element={<Asia />} />

@@ -15,7 +15,7 @@ export default function SouthAmerica(){
                 <p>
                     This area has influences from Italy and Spain. Pasta and polenta are common in dishes in this region
                 </p>
-                <h2>TRopical Region cuisine</h2>
+                <h2>Tropical Region cuisine</h2>
                 <p>
                     The climate and geography of this region favour a wide variety of crops inlcuding potatoes, sweet potatoes, cassava. These are complimented with meat and fish; grains, principally rice, corn, and wheat and beans. 
                     The coastal areas are take advantage of the supply of seafood and fish in the area. In the Amazon area, utilizationof natice meats such as capybara, turtles, peccary (pig-like animal) and paca(rodent native to the area). 

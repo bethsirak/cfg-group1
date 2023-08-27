@@ -262,7 +262,7 @@ import "./World_Map.css"
                     <br />
                     Click on the map to search for some global Recipes!
                 </h1>
-                <Link to="/recipe-card" onClick={() => handleClick()}>
+                <Link to="/recipe_results_page" onClick={() => handleClick()}>
                 <VectorMap
                 map={"world_mill"}
                 backgroundColor="#c4d9e4"
@@ -304,13 +304,13 @@ import "./World_Map.css"
         />
         </Link>
         <h2>Click on a region below to find out more about the local cuisine</h2>
-        <Link to={"/CentralAmerica"}>
+        <Link to={"/Central-America"}>
         <button id="ca">Central America</button>
         </Link> 
-        <Link to={"/SouthAmerica"}>
+        <Link to={"/South-America"}>
         <button id="sa">South America</button>
         </Link>
-        <Link to={"/NorthAmerica"}>
+        <Link to={"/North-America"}>
         <button id="na">North America</button>
         </Link>
         <Link to={"/Caribbean"}>
@@ -322,13 +322,13 @@ import "./World_Map.css"
         <Link to={"/Europe"}>
         <button id="eu">Europe</button>
         </Link>
-        <Link to={"/MiddleEast"}>
+        <Link to={"/Middle-East"}>
         <button id="me">Middle East</button>
         </Link>
         <Link to={"/Asia"}>
         <button id="as">Asia</button>
         </Link> 
-        <Link to={"/Oceania"}>
+        <Link to={"/Oceania-Australia"}>
         <button id="oc">Oceania</button>
         </Link>
     </div>
